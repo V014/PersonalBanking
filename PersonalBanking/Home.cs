@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PersonalBanking
@@ -17,20 +11,30 @@ namespace PersonalBanking
         {
             InitializeComponent();
             loadHome();
+            lbl_balance.Text = loadBalance();
+            lbl_name.Text = loadName();
+            lbl_accountType.Text = loadAccountType();
         }
         
         void loadHome()
         {
             this.panel_main.Controls.Clear();
-            Welcome welcome = new Welcome();
-            this.panel_main.Controls.Add(welcome);
-            welcome.Dock = DockStyle.Fill;
-            welcome.AutoSize = true;
-            welcome.Show();
         }
         private string loadBalance()
         {
-            string queryBalance = "SELECT Balance FROM customer";
+            string queryBalance = "SELECT Balance FROM customer WHERE status = 'online'";
+            string result = con.ReadString(queryBalance);
+            return result;
+        }
+        private string loadName()
+        {
+            string queryBalance = "SELECT FirstName FROM customer WHERE status = 'online'";
+            string result = con.ReadString(queryBalance);
+            return result;
+        }
+        private string loadAccountType()
+        {
+            string queryBalance = "SELECT AccountType FROM customer WHERE status = 'online'";
             string result = con.ReadString(queryBalance);
             return result;
         }
@@ -42,7 +46,7 @@ namespace PersonalBanking
             this.panel_main.Controls.Add(transactions);
             transactions.Dock = DockStyle.Fill;
             transactions.Show();
-            string queryRecords = "SELECT * FROM transactions";
+            string queryRecords = "SELECT TransactionID, CustomerID, PayeeAccountID, Amount, Date FROM transactions AS t INNER JOIN customer AS c ON t.CustomerID = c.AccountID WHERE status = 'online'";
             con.LoadData(queryRecords, transactions.data_transactions);
             transactions.data_transactions.Columns[0].Visible = false;
             //styleDarkDataGridView(records.dataGrid);
