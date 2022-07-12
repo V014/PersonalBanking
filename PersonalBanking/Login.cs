@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PersonalBanking
@@ -20,7 +14,7 @@ namespace PersonalBanking
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            string accountID = txt_username.Text;
+            string accountID = txt_accountID.Text;
             string password = txt_password.Text;
             string queryAccount = "SELECT ID FROM customer WHERE AccountID = '" + accountID + "' AND Password = '"+ password +"'";
             string result = con.ReadString(queryAccount);
@@ -34,7 +28,8 @@ namespace PersonalBanking
             }
             else
             {
-                MessageBox.Show("Incorrect password");
+                lbl_title.Text = "Incorrect Password";
+                panel_top.BackColor = Color.Crimson;
             }
         }
     }
