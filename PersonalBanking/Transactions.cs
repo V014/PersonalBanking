@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PersonalBanking
@@ -15,6 +8,24 @@ namespace PersonalBanking
         public Transactions()
         {
             InitializeComponent();
+        }
+
+        private void btn_transfer_Click(object sender, EventArgs e)
+        {
+            TransferMoney transfer = new TransferMoney();
+            transfer.Show();
+        }
+
+        private void btn_deposit_Click(object sender, EventArgs e)
+        {
+            Deposit deposit = new Deposit();
+            deposit.Show();
+        }
+
+        private void btn_withdraw_Click(object sender, EventArgs e)
+        {
+            Withdraw withdraw = new Withdraw();
+            withdraw.Show();
         }
     }
 }

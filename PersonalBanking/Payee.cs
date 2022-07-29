@@ -16,5 +16,11 @@ namespace PersonalBanking
         {
             InitializeComponent();
         }
+
+        private void btn_payee_Click(object sender, EventArgs e)
+        {
+            AddPayee payee = new AddPayee();
+            payee.Show();
+        }
     }
 }
