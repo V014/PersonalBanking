@@ -19,13 +19,15 @@ namespace PersonalBanking
         {
             try
             {
+                // get the account number of current customer
+                string customerAccount = con.ReadString($"SELECT accountNumber FROM account WHERE id = {id}");
                 string name = txt_name.Text;
-                string accountNumber = txt_accountNumber.Text;
-                con.ExecuteQuery($"INSERT INTO payee (name, customerAccount, payeeAccount, date) VALUES('{name}', '{id}', '{accountNumber}', '{date}')");
+                string payeeAccount = txt_accountNumber.Text;
+                con.ExecuteQuery($"INSERT INTO payee (name, customerAccount, payeeAccount, date) VALUES('{name}', '{customerAccount}', '{payeeAccount}', '{date}')");
 
+                // display results
                 lbl_title.Text = "Done ✔";
                 panel_top.BackColor = Color.MediumSeaGreen;
-                this.Close();
                 home.loadPayees();
             }
             catch (Exception)

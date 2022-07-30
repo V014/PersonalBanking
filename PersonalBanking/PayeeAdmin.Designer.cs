@@ -32,8 +32,6 @@
             this.panel_transactions = new System.Windows.Forms.Panel();
             this.panel_controls = new System.Windows.Forms.Panel();
             this.panel_buttons = new System.Windows.Forms.Panel();
-            this.btn_delete = new System.Windows.Forms.Button();
-            this.btn_edit = new System.Windows.Forms.Button();
             this.btn_payee = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data_payee)).BeginInit();
             this.panel_transactions.SuspendLayout();
@@ -76,44 +74,12 @@
             // 
             // panel_buttons
             // 
-            this.panel_buttons.Controls.Add(this.btn_delete);
-            this.panel_buttons.Controls.Add(this.btn_edit);
             this.panel_buttons.Controls.Add(this.btn_payee);
             this.panel_buttons.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_buttons.Location = new System.Drawing.Point(261, 0);
+            this.panel_buttons.Location = new System.Drawing.Point(548, 0);
             this.panel_buttons.Name = "panel_buttons";
-            this.panel_buttons.Size = new System.Drawing.Size(432, 48);
+            this.panel_buttons.Size = new System.Drawing.Size(145, 48);
             this.panel_buttons.TabIndex = 0;
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.BackColor = System.Drawing.Color.MediumPurple;
-            this.btn_delete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_delete.FlatAppearance.BorderSize = 0;
-            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Location = new System.Drawing.Point(288, 0);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(144, 48);
-            this.btn_delete.TabIndex = 2;
-            this.btn_delete.Text = "Delete Payee";
-            this.btn_delete.UseVisualStyleBackColor = false;
-            // 
-            // btn_edit
-            // 
-            this.btn_edit.BackColor = System.Drawing.Color.MediumPurple;
-            this.btn_edit.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_edit.FlatAppearance.BorderSize = 0;
-            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.ForeColor = System.Drawing.Color.White;
-            this.btn_edit.Location = new System.Drawing.Point(144, 0);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(144, 48);
-            this.btn_edit.TabIndex = 1;
-            this.btn_edit.Text = "Edit Payee";
-            this.btn_edit.UseVisualStyleBackColor = false;
             // 
             // btn_payee
             // 
@@ -153,8 +119,6 @@
         private System.Windows.Forms.Panel panel_transactions;
         private System.Windows.Forms.Panel panel_controls;
         private System.Windows.Forms.Panel panel_buttons;
-        private System.Windows.Forms.Button btn_delete;
-        private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_payee;
     }
 }

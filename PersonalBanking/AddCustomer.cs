@@ -41,7 +41,7 @@ namespace PersonalBanking
                     string customerID = con.ReadString("SELECT id FROM customer ORDER BY id DESC LIMIT 1");
 
                     // make an insert into the account table
-                    con.ExecuteQuery($"INSERT INTO account (customerID, accountNumber, accountType, balance, password, status, activity) VALUES('{customerID}', '{customerNumber}','{accountType}', '500', '{password}', 'offline', 'active')");
+                    con.ExecuteQuery($"INSERT INTO account (customerID, accountNumber, accountType, balance, password, status, activity, dateCreated) VALUES('{customerID}', '{customerNumber}','{accountType}', '500', '{password}', 'offline', 'active', '{date}')");
                     // display response
                     lbl_title.Text = "Done ✔";
                     panel_top.BackColor = Color.MediumSeaGreen;

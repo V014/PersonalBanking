@@ -18,7 +18,7 @@ namespace PersonalBanking
             string firstAccount = txt_firstAccount.Text;
             string secondAccount = txt_secondAccount.Text;
 
-            string queryCheck = $"SELECT id FROM payee WHERE firstAccount = {firstAccount} AND secondAccount = {secondAccount}";
+            string queryCheck = $"SELECT id FROM payee WHERE customerAccount = {firstAccount} AND payeeAccount = {secondAccount}";
             string id = con.ReadString(queryCheck);
 
             try

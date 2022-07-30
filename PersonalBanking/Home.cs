@@ -68,7 +68,7 @@ namespace PersonalBanking
             payee.Show();
             string queryCustomer = $"SELECT accountNumber FROM account WHERE status = 'online'";
             string accountNumber = con.ReadString(queryCustomer);
-            string queryPayees = $"SELECT p.name, p.payeeAccount, p.date FROM payee AS p INNER JOIN transactions AS t ON t.secondAccount = p.payeeAccount WHERE t.firstAccount = {accountNumber}";
+            string queryPayees = $"SELECT name, payeeAccount, date FROM payee WHERE customerAccount =  '{accountNumber}'";
             con.LoadData(queryPayees, payee.data_payee);
             styleDb(payee.data_payee);
         }

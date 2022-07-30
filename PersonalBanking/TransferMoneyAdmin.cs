@@ -31,11 +31,11 @@ namespace PersonalBanking
                 if (isOwner)
                 {
                     // Insert a transaction record of deposit
-                    con.ExecuteQuery($"INSERT INTO transactions (firstAccount, secondAccount, Amount, Date, type) VALUES ('{firstAccount}', '{firstAccount}', '{amount}', '{date}', 'Transfer')");
+                    con.ExecuteQuery($"INSERT INTO transactions (firstAccount, secondAccount, Amount, Date, type) VALUES ('{firstAccount}', '{secondAccount}', '{amount}', '{date}', 'Deposit')");
                     // update the balance of the recieving customer
-                    con.ExecuteQuery($"UPDATE account SET Balance = Balance + '{amount}' WHERE accountNumber = '{firstAccount}'");
+                    con.ExecuteQuery($"UPDATE account SET Balance = Balance + '{amount}' WHERE accountNumber = '{secondAccount}'");
                     // update recieving account
-                    con.ExecuteQuery($"UPDATE account SET Balance = Balance - '{amount}' WHERE accountNumber = '{secondAccount}'");
+                    con.ExecuteQuery($"UPDATE account SET Balance = Balance - '{amount}' WHERE accountNumber = '{firstAccount}'");
 
                     // Account type is savings account perform extra checks for whether entitled to interest
                     if (type == "Savings Account")
@@ -56,13 +56,17 @@ namespace PersonalBanking
                 {
                     // The user is making a deposit to an account they do not own, handle that case
                     // Insert a transaction record
-                    con.ExecuteQuery($"INSERT INTO transactions (secondAccount, Amount, Date, type) VALUES ('{firstAccount}', '{amount}', '{date}', 'Deposit')");
+                    con.ExecuteQuery($"INSERT INTO transactions (firstAccount, secondAccount, Amount, Date, type) VALUES ('{firstAccount}','{secondAccount}', '{amount}', '{date}', 'Transfer')");
                     // Add amount to the receivers account and deduct from the givers account
-                    con.ExecuteQuery($"UPDATE account SET Balance = Balance + '{amount}' WHERE accountNumber = '{firstAccount}'");
+                    con.ExecuteQuery($"UPDATE account SET Balance = Balance + '{amount}' WHERE accountNumber = '{secondAccount}'");
+                    // update recieving account
+                    con.ExecuteQuery($"UPDATE account SET Balance = Balance - '{amount}' WHERE accountNumber = '{firstAccount}'");
                 }
 
-                //home.loadTransactions();
-                this.Close();
+                // display response
+                lbl_title.Text = "Done ✔";
+                panel_top.BackColor = Color.MediumSeaGreen;
+                home.loadTransactions();
             }
             else
             {

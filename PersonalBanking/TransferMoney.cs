@@ -17,25 +17,28 @@ namespace PersonalBanking
 
         private void btn_send_Click(object sender, EventArgs e)
         {
-            string accountNumber = txt_accountNumber.Text;
+            string secondAccount = txt_accountNumber.Text;
             string amount = txt_amount.Text;
 
-            if(!string.IsNullOrEmpty(accountNumber) && !string.IsNullOrEmpty(amount))
+            if(!string.IsNullOrEmpty(secondAccount) && !string.IsNullOrEmpty(amount))
             {
                 try
                 {
+                    // get the account number of current customer
+                    string fisrtAccount = con.ReadString($"SELECT accountNumber FROM account WHERE id = {id}");
                     // Insert a transaction record of deposit
-                    con.ExecuteQuery($"INSERT INTO transactions (firstAccount, secondAccount, Amount, Date, type) VALUES ('{id}', '{accountNumber}', '{amount}', '{date}', 'Transfer')");
+                    con.ExecuteQuery($"INSERT INTO transactions (firstAccount, secondAccount, Amount, Date, type) VALUES ('{fisrtAccount}', '{secondAccount}', '{amount}', '{date}', 'Transfer')");
                     // update the balance of the recieving customer
-                    con.ExecuteQuery($"UPDATE account SET Balance = Balance + '{amount}' WHERE accountNumber = '{accountNumber}'");
+                    con.ExecuteQuery($"UPDATE account SET Balance = Balance + '{amount}' WHERE accountNumber = '{secondAccount}'");
                     // update the balance of the customer
-                    con.ExecuteQuery($"UPDATE account SET Balance = Balance - '{amount}' WHERE id = '{id}'");
+                    con.ExecuteQuery($"UPDATE account SET Balance = Balance - '{amount}' WHERE id = '{fisrtAccount}'");
                     // get balance
-                    string balance = con.ReadString($"SELECT balance FROM account WHERE customerID = {id}");
+                    string balance = con.ReadString($"SELECT balance FROM account WHERE customerID = {fisrtAccount}");
                     // display results
                     lbl_title.Text = "Done ✔";
                     panel_top.BackColor = Color.MediumSeaGreen;
                     home.lbl_balance.Text = balance;
+                    home.loadTransactions();
                 }
                 catch (Exception)
                 {

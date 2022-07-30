@@ -12,7 +12,7 @@ namespace PersonalBanking
 
         private void btn_transfer_Click(object sender, EventArgs e)
         {
-            TransferMoney transfer = new TransferMoney();
+            TransferMoneyAdmin transfer = new TransferMoneyAdmin();
             transfer.Show();
         }
 

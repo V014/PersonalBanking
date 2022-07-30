@@ -32,7 +32,6 @@
             this.data_transactions = new System.Windows.Forms.DataGridView();
             this.panel_controls = new System.Windows.Forms.Panel();
             this.panel_buttons = new System.Windows.Forms.Panel();
-            this.btn_deposit = new System.Windows.Forms.Button();
             this.btn_transfer = new System.Windows.Forms.Button();
             this.panel_transactions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_transactions)).BeginInit();
@@ -75,29 +74,12 @@
             // 
             // panel_buttons
             // 
-            this.panel_buttons.Controls.Add(this.btn_deposit);
             this.panel_buttons.Controls.Add(this.btn_transfer);
             this.panel_buttons.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_buttons.Location = new System.Drawing.Point(405, 0);
+            this.panel_buttons.Location = new System.Drawing.Point(548, 0);
             this.panel_buttons.Name = "panel_buttons";
-            this.panel_buttons.Size = new System.Drawing.Size(288, 48);
+            this.panel_buttons.Size = new System.Drawing.Size(145, 48);
             this.panel_buttons.TabIndex = 0;
-            // 
-            // btn_deposit
-            // 
-            this.btn_deposit.BackColor = System.Drawing.Color.MediumPurple;
-            this.btn_deposit.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_deposit.FlatAppearance.BorderSize = 0;
-            this.btn_deposit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_deposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deposit.ForeColor = System.Drawing.Color.White;
-            this.btn_deposit.Location = new System.Drawing.Point(144, 0);
-            this.btn_deposit.Name = "btn_deposit";
-            this.btn_deposit.Size = new System.Drawing.Size(144, 48);
-            this.btn_deposit.TabIndex = 1;
-            this.btn_deposit.Text = "Deposit Money";
-            this.btn_deposit.UseVisualStyleBackColor = false;
-            this.btn_deposit.Click += new System.EventHandler(this.btn_deposit_Click);
             // 
             // btn_transfer
             // 
@@ -115,13 +97,13 @@
             this.btn_transfer.UseVisualStyleBackColor = false;
             this.btn_transfer.Click += new System.EventHandler(this.btn_transfer_Click);
             // 
-            // AdminTransaction
+            // TransactionAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel_transactions);
             this.Controls.Add(this.panel_controls);
-            this.Name = "AdminTransaction";
+            this.Name = "TransactionAdmin";
             this.Size = new System.Drawing.Size(693, 479);
             this.panel_transactions.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.data_transactions)).EndInit();
@@ -137,7 +119,6 @@
         public System.Windows.Forms.DataGridView data_transactions;
         private System.Windows.Forms.Panel panel_controls;
         private System.Windows.Forms.Panel panel_buttons;
-        private System.Windows.Forms.Button btn_deposit;
         private System.Windows.Forms.Button btn_transfer;
     }
 }

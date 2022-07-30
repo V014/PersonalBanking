@@ -33,7 +33,7 @@ namespace PersonalBanking
         {
             this.panel_main.Controls.Clear();
             Customer customer = new Customer();
-            string queryRecords = "SELECT firstname, lastname, dateOfBirth, nationality, dateCreated, activity, accountNumber, accountType, balance, status FROM Customer AS c INNER JOIN account AS a ON c.id = a.customerID";
+            string queryRecords = "SELECT firstname, lastname, dateOfBirth, nationality, activity, accountNumber, accountType, balance, status, a.dateCreated FROM Customer AS c INNER JOIN account AS a ON c.id = a.customerID";
             con.LoadData(queryRecords, customer.data_customers);
             this.panel_main.Controls.Add(customer);
             customer.Dock = DockStyle.Fill;
@@ -64,7 +64,7 @@ namespace PersonalBanking
             payee.Show();
             string queryCustomer = $"SELECT accountNumber FROM account WHERE status = 'online'";
             string accountNumber = con.ReadString(queryCustomer);
-            string queryPayees = "SELECT p.payeeAccount, p.name, p.customerAccount, p.date FROM payee AS p INNER JOIN transactions AS t ON t.secondAccount = p.payeeAccount";
+            string queryPayees = "SELECT * FROM payee";
             con.LoadData(queryPayees, payee.data_payee);
             styleDb(payee.data_payee);
         }
