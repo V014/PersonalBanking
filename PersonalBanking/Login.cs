@@ -14,13 +14,13 @@ namespace PersonalBanking
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            string accountID = txt_accountID.Text;
+            string accountNumber = txt_accountNumber.Text;
             string password = txt_password.Text;
-            string queryAccount = "SELECT ID FROM customer WHERE AccountID = '" + accountID + "' AND Password = '"+ password +"'";
+            string queryAccount = $"SELECT ID FROM account WHERE accountNumber = {accountNumber} AND password = '{password}'";
             string result = con.ReadString(queryAccount);
             if (result != "")
             {
-                string query = $"UPDATE customer SET status = 'online' WHERE ID = {result}";
+                string query = $"UPDATE account SET status = 'online' WHERE ID = {result}";
                 con.ExecuteQuery(query);
                 Home home = new Home();
                 home.Show();
@@ -31,6 +31,18 @@ namespace PersonalBanking
                 lbl_title.Text = "Incorrect Password";
                 panel_top.BackColor = Color.Crimson;
             }
+        }
+
+        private void lbl_admin_Click(object sender, EventArgs e)
+        {
+            LoginAdmin admin = new LoginAdmin();
+            admin.Show();
+            this.Hide();
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
