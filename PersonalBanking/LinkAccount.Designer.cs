@@ -135,6 +135,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "LinkAccount";
+<<<<<<< HEAD
+=======
+            this.ShowIcon = false;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();

@@ -34,10 +34,15 @@
             this.btn_add = new System.Windows.Forms.Button();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.txt_firstAccount = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_secondAccount = new System.Windows.Forms.TextBox();
+=======
+            this.txt_accountNumber = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.panel_top.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,9 +76,15 @@
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btn_add.Location = new System.Drawing.Point(0, 367);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(269, 48);
+=======
+            this.btn_add.Location = new System.Drawing.Point(0, 276);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(269, 56);
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.btn_add.TabIndex = 3;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = false;
@@ -97,6 +108,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(9, 165);
             this.label3.Name = "label3";
+<<<<<<< HEAD
             this.label3.Size = new System.Drawing.Size(84, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "First Account";
@@ -111,6 +123,21 @@
             this.txt_firstAccount.PasswordChar = '•';
             this.txt_firstAccount.Size = new System.Drawing.Size(250, 40);
             this.txt_firstAccount.TabIndex = 1;
+=======
+            this.label3.Size = new System.Drawing.Size(107, 16);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Account Number";
+            // 
+            // txt_accountNumber
+            // 
+            this.txt_accountNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_accountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_accountNumber.Location = new System.Drawing.Point(8, 204);
+            this.txt_accountNumber.Multiline = true;
+            this.txt_accountNumber.Name = "txt_accountNumber";
+            this.txt_accountNumber.Size = new System.Drawing.Size(250, 40);
+            this.txt_accountNumber.TabIndex = 1;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             // 
             // label2
             // 
@@ -124,6 +151,7 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Name";
             // 
+<<<<<<< HEAD
             // label1
             // 
             this.label1.AutoSize = true;
@@ -147,12 +175,15 @@
             this.txt_secondAccount.Size = new System.Drawing.Size(250, 40);
             this.txt_secondAccount.TabIndex = 2;
             // 
+=======
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             // AddPayee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(269, 415);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_secondAccount);
@@ -168,6 +199,22 @@
             this.MinimizeBox = false;
             this.Name = "AddPayee";
             this.Text = "AddPayee";
+=======
+            this.ClientSize = new System.Drawing.Size(269, 332);
+            this.Controls.Add(this.btn_add);
+            this.Controls.Add(this.txt_name);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_accountNumber);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel_top);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "AddPayee";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
             this.ResumeLayout(false);
@@ -182,9 +229,14 @@
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label label3;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txt_firstAccount;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_secondAccount;
+=======
+        private System.Windows.Forms.TextBox txt_accountNumber;
+        private System.Windows.Forms.Label label2;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
     }
 }

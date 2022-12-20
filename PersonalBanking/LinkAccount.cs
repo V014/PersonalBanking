@@ -18,16 +18,28 @@ namespace PersonalBanking
             string firstAccount = txt_firstAccount.Text;
             string secondAccount = txt_secondAccount.Text;
 
+<<<<<<< HEAD
             string queryCheck = $"SELECT id FROM payee WHERE firstAccount = {firstAccount} AND secondAccount = {secondAccount}";
+=======
+            string queryCheck = $"SELECT id FROM payee WHERE customerAccount = {firstAccount} AND payeeAccount = {secondAccount}";
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             string id = con.ReadString(queryCheck);
 
             try
             {
+<<<<<<< HEAD
                 if (id == "")
                 {
                     string queryLink = $"INSERT INTO payee VALUES(NULL, {firstAccount}, {secondAccount}, '{date}')";
                     con.ExecuteQuery(queryLink);
                     lbl_title.Text = "Accounts Linked!";
+=======
+                if (string.IsNullOrEmpty(id))
+                {
+                    string queryLink = $"INSERT INTO payee VALUES(NULL, {firstAccount}, {secondAccount}, '{date}')";
+                    con.ExecuteQuery(queryLink);
+                    lbl_title.Text = "Done ✔";
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
                     panel_top.BackColor = Color.MediumSeaGreen;
                 }
                 else

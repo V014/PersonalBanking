@@ -46,9 +46,18 @@ namespace PersonalBanking
                         if (int.Parse(threshhold) > 3 && string.IsNullOrEmpty(interest))
                         {
                             // set interest to 8 percent
+<<<<<<< HEAD
                             con.ExecuteQuery($"INSERT INTO Interest (accountID, percentage) VALUES ('{accountNo}', '{8}')");
                         }
                     }
+=======
+                            con.ExecuteQuery($"INSERT INTO Interest (accountID, percentage, paid) VALUES ('{accountNo}', '8', 'false')");
+                        }
+                    }
+                    lbl_title.Text = "Done ✔";
+                    panel_top.BackColor = Color.MediumSeaGreen;
+                    home.loadTransactions();
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
                 }
                 else
                 {
@@ -58,6 +67,7 @@ namespace PersonalBanking
                     // Add amount to the receivers account and deduct from the givers account
                     con.ExecuteQuery($"UPDATE account SET Balance = Balance + '{amount}' WHERE accountNumber = '{accountNo}'");
                 }
+<<<<<<< HEAD
 
                 home.loadTransactions();
                 home.refresh();
@@ -66,6 +76,12 @@ namespace PersonalBanking
             else
             {
                 lbl_title.Text = "Empty fields";
+=======
+            }
+            else
+            {
+                lbl_title.Text = "Incomplete form!";
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
                 panel_top.BackColor = Color.Crimson;
             }
         }

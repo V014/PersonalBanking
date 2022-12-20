@@ -41,12 +41,21 @@
             // 
             // data_customers
             // 
+<<<<<<< HEAD
+=======
+            this.data_customers.AllowUserToAddRows = false;
+            this.data_customers.AllowUserToDeleteRows = false;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.data_customers.BackgroundColor = System.Drawing.Color.White;
             this.data_customers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data_customers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_customers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_customers.Location = new System.Drawing.Point(0, 0);
             this.data_customers.Name = "data_customers";
+<<<<<<< HEAD
+=======
+            this.data_customers.ReadOnly = true;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.data_customers.Size = new System.Drawing.Size(693, 431);
             this.data_customers.TabIndex = 1;
             // 

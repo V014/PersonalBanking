@@ -68,7 +68,11 @@ namespace PersonalBanking
             payee.Show();
             string queryCustomer = $"SELECT accountNumber FROM account WHERE status = 'online'";
             string accountNumber = con.ReadString(queryCustomer);
+<<<<<<< HEAD
             string queryPayees = $"SELECT p.payee_account, p.name, p.dateCreated FROM payee AS p INNER JOIN transactions AS t ON t.secondAccount = p.payee_account WHERE t.firstAccount = {accountNumber}";
+=======
+            string queryPayees = $"SELECT name, payeeAccount, date FROM payee WHERE customerAccount =  '{accountNumber}'";
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             con.LoadData(queryPayees, payee.data_payee);
             styleDb(payee.data_payee);
         }
@@ -79,8 +83,14 @@ namespace PersonalBanking
             this.panel_main.Controls.Add(transactions);
             transactions.Dock = DockStyle.Fill;
             transactions.Show();
+<<<<<<< HEAD
             string queryRecords = "SELECT t.id, t.firstAccount, t.secondAccount, t.Amount, t.Date FROM transactions AS t INNER JOIN account AS a ON t.firstAccount = a.accountNumber WHERE a.status = 'online'";
             con.LoadData(queryRecords, transactions.data_transactions);
+=======
+            string queryRecords = "SELECT t.id, t.firstAccount, t.secondAccount, t.Amount, t.Date, t.type, a.accountNumber, a.accountType FROM transactions AS t INNER JOIN account AS a ON t.firstAccount = a.accountNumber WHERE a.status = 'online'";
+            con.LoadData(queryRecords, transactions.data_transactions);
+            transactions.data_transactions.Columns[0].Visible = false;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             styleDb(transactions.data_transactions);
         }
         // styling the data grid views
@@ -94,8 +104,13 @@ namespace PersonalBanking
             dataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+<<<<<<< HEAD
             dataGrid.RowHeadersVisible = false;
 
+=======
+
+            dataGrid.RowHeadersVisible = false;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             dataGrid.EnableHeadersVisualStyles = false;
             dataGrid.AllowDrop = false;
             dataGrid.AllowUserToAddRows = false;

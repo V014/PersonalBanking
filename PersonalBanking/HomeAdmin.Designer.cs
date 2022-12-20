@@ -40,6 +40,10 @@
             this.btn_transactions = new System.Windows.Forms.Button();
             this.btn_customers = new System.Windows.Forms.Button();
             this.btn_home = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+=======
+            this.btn_signOut = new System.Windows.Forms.Button();
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.panel_title.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel_nav.SuspendLayout();
@@ -121,6 +125,10 @@
             // panel_nav
             // 
             this.panel_nav.BackColor = System.Drawing.Color.Lavender;
+<<<<<<< HEAD
+=======
+            this.panel_nav.Controls.Add(this.btn_signOut);
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.panel_nav.Controls.Add(this.btn_payee);
             this.panel_nav.Controls.Add(this.btn_transactions);
             this.panel_nav.Controls.Add(this.btn_customers);
@@ -199,6 +207,27 @@
             this.btn_home.UseVisualStyleBackColor = false;
             this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
+<<<<<<< HEAD
+=======
+            // btn_signOut
+            // 
+            this.btn_signOut.BackColor = System.Drawing.Color.MediumPurple;
+            this.btn_signOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btn_signOut.FlatAppearance.BorderSize = 0;
+            this.btn_signOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.btn_signOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_signOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_signOut.ForeColor = System.Drawing.Color.White;
+            this.btn_signOut.Location = new System.Drawing.Point(0, 427);
+            this.btn_signOut.Name = "btn_signOut";
+            this.btn_signOut.Size = new System.Drawing.Size(188, 52);
+            this.btn_signOut.TabIndex = 5;
+            this.btn_signOut.Text = "Sign out";
+            this.btn_signOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_signOut.UseVisualStyleBackColor = false;
+            this.btn_signOut.Click += new System.EventHandler(this.btn_signOut_Click);
+            // 
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             // HomeAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,5 +264,9 @@
         private System.Windows.Forms.Button btn_transactions;
         private System.Windows.Forms.Button btn_customers;
         private System.Windows.Forms.Button btn_home;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.Button btn_signOut;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
     }
 }

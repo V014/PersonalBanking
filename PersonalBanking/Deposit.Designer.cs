@@ -46,7 +46,11 @@
             this.btn_link.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_link.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_link.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btn_link.Location = new System.Drawing.Point(0, 291);
+=======
+            this.btn_link.Location = new System.Drawing.Point(0, 241);
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.btn_link.Name = "btn_link";
             this.btn_link.Size = new System.Drawing.Size(286, 58);
             this.btn_link.TabIndex = 13;
@@ -59,7 +63,11 @@
             this.txt_amount.BackColor = System.Drawing.Color.White;
             this.txt_amount.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txt_amount.Location = new System.Drawing.Point(17, 209);
+=======
+            this.txt_amount.Location = new System.Drawing.Point(17, 175);
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.txt_amount.Multiline = true;
             this.txt_amount.Name = "txt_amount";
             this.txt_amount.Size = new System.Drawing.Size(250, 40);
@@ -70,7 +78,11 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label8.Location = new System.Drawing.Point(14, 188);
+=======
+            this.label8.Location = new System.Drawing.Point(14, 154);
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 18);
             this.label8.TabIndex = 16;
@@ -102,18 +114,30 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(14, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 18);
             this.label1.TabIndex = 16;
             this.label1.Text = "Account Number";
+=======
+            this.label1.Location = new System.Drawing.Point(14, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 18);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Amount Number";
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             // 
             // txt_account
             // 
             this.txt_account.BackColor = System.Drawing.Color.White;
             this.txt_account.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txt_account.Location = new System.Drawing.Point(17, 112);
+=======
+            this.txt_account.Location = new System.Drawing.Point(17, 97);
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.txt_account.Multiline = true;
             this.txt_account.Name = "txt_account";
             this.txt_account.Size = new System.Drawing.Size(250, 40);
@@ -123,7 +147,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(286, 349);
+=======
+            this.ClientSize = new System.Drawing.Size(286, 299);
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.Controls.Add(this.btn_link);
             this.Controls.Add(this.txt_account);
             this.Controls.Add(this.label1);
@@ -134,8 +162,13 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Deposit";
+<<<<<<< HEAD
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Deposit";
+=======
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
             this.ResumeLayout(false);

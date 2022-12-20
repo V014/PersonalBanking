@@ -3,20 +3,16 @@ using System.Windows.Forms;
 
 namespace PersonalBanking
 {
-    public partial class Transactions : UserControl
+    public partial class TransactionAdmin : UserControl
     {
-        public Transactions()
+        public TransactionAdmin()
         {
             InitializeComponent();
         }
 
         private void btn_transfer_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            SendMoney transfer = new SendMoney();
-=======
             TransferMoneyAdmin transfer = new TransferMoneyAdmin();
->>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             transfer.Show();
         }
 
@@ -24,12 +20,6 @@ namespace PersonalBanking
         {
             Deposit deposit = new Deposit();
             deposit.Show();
-        }
-
-        private void btn_withdraw_Click(object sender, EventArgs e)
-        {
-            Withdraw withdraw = new Withdraw();
-            withdraw.Show();
         }
     }
 }

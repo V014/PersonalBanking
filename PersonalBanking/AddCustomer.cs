@@ -22,6 +22,7 @@ namespace PersonalBanking
             string nationality = txt_nationality.Text;
             string accountType = txt_accountType.Text;
             string password = txt_password.Text;
+<<<<<<< HEAD
             string customerID = txt_customerID.Text;
             string date = DateTime.Now.ToString("g");
             try
@@ -49,6 +50,47 @@ namespace PersonalBanking
                 panel_top.BackColor = Color.Crimson;
             }
         }
+=======
+            string customerNumber = txt_customerNumber.Text;
+            string date = DateTime.Now.ToString("g");
+
+            // check to see if account type already exists
+            string queryExist = $"SELECT ID FROM account WHERE customerID = {customerNumber} AND accountType = '{accountType}'";
+            string result = con.ReadString(queryExist);
+
+            // if the account doesnt exit
+            if(string.IsNullOrEmpty(result))
+            {
+                try
+                {
+                    // make an insert into the customer table
+                    con.ExecuteQuery($"INSERT INTO customer VALUES(NULL, '{fname}', '{lname}', '{dob}', '{contact}', '{nationality}', '{date}')");
+
+                    // Retrieve the id of the last entered record into the customer table
+                    string customerID = con.ReadString("SELECT id FROM customer ORDER BY id DESC LIMIT 1");
+
+                    // make an insert into the account table
+                    con.ExecuteQuery($"INSERT INTO account (customerID, accountNumber, accountType, balance, password, status, activity, dateCreated) VALUES('{customerID}', '{customerNumber}','{accountType}', '500', '{password}', 'offline', 'active', '{date}')");
+                    // display response
+                    lbl_title.Text = "Done ✔";
+                    panel_top.BackColor = Color.MediumSeaGreen;
+                    home.loadCustomers();
+                }
+                catch (Exception)
+                {
+                    lbl_title.Text = "System error!";
+                    panel_top.BackColor = Color.Crimson;
+                }
+            }
+            // if the account type already exists
+            else
+            {
+                lbl_title.Text = "Duplicate Account Type";
+                panel_top.BackColor = Color.Crimson;
+            }
+        }
+        // reject words in numerical textfields
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
         private void txt_contact_KeyPress(object sender, KeyPressEventArgs e)
         {
             int asciiCode = Convert.ToInt32(e.KeyChar);

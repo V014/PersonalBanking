@@ -64,6 +64,21 @@
     <Compile Include="AddPayee.Designer.cs">
       <DependentUpon>AddPayee.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="PayeeAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayeeAdmin.Designer.cs">
+      <DependentUpon>PayeeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransactionAdmin.Designer.cs">
+      <DependentUpon>TransactionAdmin.cs</DependentUpon>
+    </Compile>
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
     <Compile Include="CloseAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,11 +142,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="SendMoney.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SendMoney.Designer.cs">
       <DependentUpon>SendMoney.cs</DependentUpon>
+=======
+    <Compile Include="TransferMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferMoney.Designer.cs">
+      <DependentUpon>TransferMoney.cs</DependentUpon>
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
     </Compile>
     <Compile Include="Transactions.cs">
       <SubType>UserControl</SubType>
@@ -139,11 +162,19 @@
     <Compile Include="Transactions.Designer.cs">
       <DependentUpon>Transactions.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="TransferMoney.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TransferMoney.Designer.cs">
       <DependentUpon>TransferMoney.cs</DependentUpon>
+=======
+    <Compile Include="TransferMoneyAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferMoneyAdmin.Designer.cs">
+      <DependentUpon>TransferMoneyAdmin.cs</DependentUpon>
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
     </Compile>
     <Compile Include="Utils.cs" />
     <Compile Include="Welcome.cs">
@@ -164,6 +195,15 @@
     <EmbeddedResource Include="AddPayee.resx">
       <DependentUpon>AddPayee.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="PayeeAdmin.resx">
+      <DependentUpon>PayeeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionAdmin.resx">
+      <DependentUpon>TransactionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
     <EmbeddedResource Include="CloseAccount.resx">
       <DependentUpon>CloseAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,14 +243,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="SendMoney.resx">
       <DependentUpon>SendMoney.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="TransferMoney.resx">
+      <DependentUpon>TransferMoney.cs</DependentUpon>
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
     </EmbeddedResource>
     <EmbeddedResource Include="Transactions.resx">
       <DependentUpon>Transactions.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="TransferMoney.resx">
       <DependentUpon>TransferMoney.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="TransferMoneyAdmin.resx">
+      <DependentUpon>TransferMoneyAdmin.cs</DependentUpon>
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>

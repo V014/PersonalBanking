@@ -21,9 +21,16 @@ namespace PersonalBanking
                 if (dialogResult == DialogResult.Yes)
                 {
                     string account = txt_accountID.Text;
+<<<<<<< HEAD
                     string queryClose = $"UPDATE customer SET  WHERE accountID = {account}";
 
                     con.ExecuteQuery(queryClose);
+=======
+                    con.ExecuteQuery($"UPDATE account SET activity = 'inactive' WHERE accountNumber = {account}");
+
+                    lbl_title.Text = "Done ✔";
+                    panel_top.BackColor = Color.MediumSeaGreen;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
                     home.loadCustomers();
                 }
             }

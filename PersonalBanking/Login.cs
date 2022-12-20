@@ -22,9 +22,15 @@ namespace PersonalBanking
             {
                 string query = $"UPDATE account SET status = 'online' WHERE ID = {result}";
                 con.ExecuteQuery(query);
+                Utils.AccountNo = accountNumber;
                 Home home = new Home();
                 home.Show();
                 this.Hide();
+
+                if (Utils.PayInterest())
+                {
+                    MessageBox.Show("Your account has received interest payment");
+                }
             }
             else
             {

@@ -41,7 +41,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.txt_customerID = new System.Windows.Forms.TextBox();
+=======
+            this.txt_customerNumber = new System.Windows.Forms.TextBox();
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.txt_nationality = new System.Windows.Forms.ComboBox();
             this.txt_accountType = new System.Windows.Forms.ComboBox();
             this.txt_password = new System.Windows.Forms.TextBox();
@@ -176,6 +180,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(249, 319);
             this.label8.Name = "label8";
+<<<<<<< HEAD
             this.label8.Size = new System.Drawing.Size(92, 18);
             this.label8.TabIndex = 1;
             this.label8.Text = "Customer ID";
@@ -191,6 +196,23 @@
             this.txt_customerID.Size = new System.Drawing.Size(198, 29);
             this.txt_customerID.TabIndex = 7;
             this.txt_customerID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_accountID_KeyPress);
+=======
+            this.label8.Size = new System.Drawing.Size(131, 18);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Customer Number";
+            // 
+            // txt_customerNumber
+            // 
+            this.txt_customerNumber.BackColor = System.Drawing.Color.White;
+            this.txt_customerNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_customerNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_customerNumber.Location = new System.Drawing.Point(252, 340);
+            this.txt_customerNumber.Multiline = true;
+            this.txt_customerNumber.Name = "txt_customerNumber";
+            this.txt_customerNumber.Size = new System.Drawing.Size(198, 29);
+            this.txt_customerNumber.TabIndex = 7;
+            this.txt_customerNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_accountID_KeyPress);
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             // 
             // txt_nationality
             // 
@@ -291,7 +313,11 @@
             this.Controls.Add(this.txt_accountType);
             this.Controls.Add(this.txt_nationality);
             this.Controls.Add(this.txt_dob);
+<<<<<<< HEAD
             this.Controls.Add(this.txt_customerID);
+=======
+            this.Controls.Add(this.txt_customerNumber);
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
             this.Controls.Add(this.txt_contact);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_lname);
@@ -329,7 +355,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txt_customerID;
+=======
+        private System.Windows.Forms.TextBox txt_customerNumber;
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
         private System.Windows.Forms.ComboBox txt_nationality;
         private System.Windows.Forms.ComboBox txt_accountType;
         private System.Windows.Forms.TextBox txt_password;

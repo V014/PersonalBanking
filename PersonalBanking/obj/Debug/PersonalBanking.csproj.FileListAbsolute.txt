@@ -68,7 +68,10 @@ C:\Users\Rose\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBank
 C:\Users\Wanga\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.SendMoney.resources
 C:\Users\Wanga\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Welcome.resources
 C:\Users\User\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Deposit.resources
+<<<<<<< HEAD
 C:\Users\User\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.SendMoney.resources
+=======
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
 C:\Users\User\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Welcome.resources
 C:\Users\Wanga\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Deposit.resources
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\bin\Debug\PersonalBanking.exe.config
@@ -91,10 +94,23 @@ C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.LoginAdmin.resources
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Payee.resources
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Properties.Resources.resources
+<<<<<<< HEAD
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.SendMoney.resources
+=======
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Transactions.resources
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.TransferMoney.resources
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Welcome.resources
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.csproj.GenerateResource.Cache
 C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Withdraw.resources
+<<<<<<< HEAD
 C:\Users\Wanga\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Withdraw.resources
+=======
+C:\Users\User\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.Withdraw.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.TransferMoneyAdmin.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.TransactionAdmin.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.PayeeAdmin.resources
+C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.PayeeAdmin.resources
+C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.TransactionAdmin.resources
+C:\Users\U\Documents\Visual Studio 2015\Projects\PersonalBanking\PersonalBanking\obj\Debug\PersonalBanking.TransferMoneyAdmin.resources
+>>>>>>> ea55cebfc6252257567cdd1f590ab73666373841
